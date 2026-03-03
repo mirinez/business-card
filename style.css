@@ -1,0 +1,355 @@
+/* ================================================================
+   BUSINESS CARD - STYLESHEET
+   Míriam Domínguez Martínez - 03.03.2026
+*/
+
+/* ================================================================
+   1. FONTS
+*/
+
+@font-face {
+  font-family: 'PixelifySans';
+  src: url('./fonts/PixelifySans-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PixelifySans';
+  src: url('./fonts/PixelifySans-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'PixelifySans';
+  src: url('./fonts/PixelifySans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'PixelifySans';
+  src: url('./fonts/PixelifySans-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+/* ================================================================
+   2. COLOR VARIABLES
+*/
+
+/* Define color palette using CSS variables, they are the same as my Portfolio colors */
+:root {
+    --color-white: #FFF;
+    --color-light-green: #C0E992;
+    --color-green: #5FD372;
+    --color-dark-green: #59896C;
+    --color-teal: #59AF7D;
+}
+
+/* ================================================================
+   3. RESET & BASE STYLES
+*/
+
+* {
+    /* Remove all default margins and paddings */
+    margin: 0;
+    padding: 0;
+    /* Include padding/border in element dimensions */
+    box-sizing: border-box;
+}
+
+body {
+    /* Apply default typography */
+    font-family: 'PixelifySans', sans-serif;
+    background: white;
+    min-height: 100vh; /* Full viewport height minimum */
+
+    /* Flexbox layout: column direction for vertical stacking */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* ================================================================
+   4. MAIN CONTENT WRAPPER
+*/
+
+.main-content {
+    flex: 1; /* Grow to fill available space */
+
+    /* Center content horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width */
+}
+
+/* ================================================================
+   5. CONTAINER
+*/
+
+.container {
+    /* Full width with max-width constraint */
+    width: 100%;
+    max-width: 900px;
+}
+
+/* ================================================================
+   6. CARD - MAIN LAYOUT
+*/
+
+.card {
+    display: flex; /* Flexbox for left/right sections */
+    background-color: #FFF;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);  /* Subtle shadow for depth */
+    overflow: hidden; /* Hide content beyond rounded borders */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transitions */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); /* Increase shadow intensity */
+}
+
+/* ================================================================
+   7. CARD LEFT - INTRODUCTION SECTION
+*/
+
+.card_left {
+    flex: 1; /* Equal width as right section */
+    background:#59896C;
+    color: #FFF; 
+    padding: 50px 40px;
+
+    /* Vertical center content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Main greeting text */
+.card_title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    opacity: 0.9;
+    letter-spacing: 0.5px;
+}
+
+/* Full name heading */
+.card_name {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+/* Job title text */
+.card_role {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    opacity: 0.95;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Professional description */
+.card_description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* ================================================================
+   8. SKILL TAGS
+*/
+
+.card_tags {
+    /* Horizontal flex layout with wrapping */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Individual skill tag */
+.tag {
+    /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #FFF;
+    padding: 6px 14px;
+
+    /* Pill-shaped border */
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Subtle white border */
+    transition: all 0.3s ease; /* Smooth hover animation */
+}
+
+.tag:hover {
+    /* Slightly increase opacity and scale */
+    background-color: rgba(255, 255, 255, 0.35);
+    transform: scale(1.05);
+}
+
+/* ================================================================
+   9. CARD RIGHT - PROFILE SECTION
+*/
+
+.card_right {
+    flex: 1; /* Equal width as left section */
+    background-color: #FFF;
+    padding: 50px 40px;
+
+    /* Center all content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Profile container */
+.profile {
+    text-align: center;
+    width: 100%;
+}
+
+.profile_nick_ {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.profile_role_ {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    color: #59AF7D;
+}
+
+.profile_quote_ {
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 50px;
+    color: #333;
+    opacity: 0.9;
+}
+
+/* ================================================================
+   10. PROFILE PICTURE
+*/
+
+.profile_picture {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(4px 4px 0px rgba(95, 211, 114, 0.4));
+}
+
+.profile_img {
+    width: 120px;
+    height: 120px;
+    border-radius: 0;
+    border: 2px solid #5FD372;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.profile_img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    border-color: #a1ff98; /* Intensify border color */
+    box-shadow: 0 5px 15px rgba(95, 211, 114, 0.3); /* Add subtle shadow */
+}
+
+/* ================================================================
+   11. BUTTONS & LINKS
+*/
+
+.profile_links {
+    /* Horizontal flex layout */
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+
+    flex-wrap: wrap; /* Allow wrapping on mobile */
+}
+
+/* Base button styles */
+.btn {
+    /* Display as inline-block */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+
+    /* Smooth transitions */
+    transition: all 0.3s ease;
+    border: 2px solid;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Primary button - solid green */
+.btn-primary {
+    background-color: #5FD372;
+    color: #FFF;
+    border-color: #5FD372;
+}
+
+.btn-primary:hover {
+    /* Change to light green on hover */
+    background-color: #a1ff98;
+    border-color: #a1ff98;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(95, 211, 114, 0.3);
+}
+
+/* Secondary button - transparent with teal border */
+.btn-secondary {
+    background-color: transparent;
+    color: #59AF7D;
+    border-color: #59AF7D;
+}
+
+.btn-secondary:hover {
+    /* Fill with teal background on hover */
+    background-color: #59AF7D;
+    color: #FFF;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(89, 175, 125, 0.3);
+}
+
+/* Tertiary button - transparent with dark green border */
+.btn-tertiary {
+    background-color: transparent;
+    color: #59896C;
+    border-color: #59896C;
+}
+
+.btn-tertiary:hover {
+    /* Fill with dark green background on hover */
+    background-color: #59896C;
+    color: #FFF;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(89, 137, 108, 0.3);
+}
+
+/* ================================================================
+   12. FOOTER
+*/
+
+.site-footer {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 24px;
+    border-top: 1px solid #dbdbdb; /* Subtle top border separator */
+    font-size: 13px;
+    color: #8e8e8e;
+    width: 100%;
+    margin-top: 40px;
+}
