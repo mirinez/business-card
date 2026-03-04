@@ -353,3 +353,113 @@ body {
     width: 100%;
     margin-top: 40px;
 }
+
+/* ================================================================
+   13. MEDIA QUERIES - MOBILE FIRST
+*/
+
+/* SMARTPHONES - max-width: 768px */
+@media (max-width: 768px) {
+  
+  /* Card stays horizontal */
+  .card {
+    flex-direction: row;
+  }
+
+  /* Left Section */
+  .card_left {
+    flex: 0.8; /* Less space */
+    padding: 30px 20px;
+  }
+
+  .card_title {
+    font-size: 14px;
+  }
+
+  .card_name {
+    font-size: 20px;
+  }
+
+  .card_role {
+    font-size: 11px;
+  }
+
+  .card_description {
+    font-size: 12px;
+  }
+
+  /* Right Section */
+  .card_right {
+    flex: 0.6; /* Less space */
+    padding: 30px 15px;
+  }
+
+  /* Profile Picture */
+  .profile_img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile_nick_ {
+    font-size: 11px;
+  }
+
+  .profile_role_ {
+    font-size: 11px;
+  }
+
+  .profile_quote_ {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+
+  .profile_links {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  /* Tags */
+  .tag {
+    padding: 4px 10px;
+    font-size: 10px;
+  }
+}
+
+/* VERY SMALL DEVICES - max-width: 480px */
+@media (max-width: 480px) {
+  
+  /* Card stays horizontal but more compact */
+  .card {
+    flex-direction: row;
+  }
+
+  .card_left {
+    flex: 0.7;
+    padding: 25px 15px;
+  }
+
+  .card_name {
+    font-size: 18px;
+  }
+
+  .card_right {
+    flex: 0.5;
+    padding: 25px 10px;
+  }
+
+  .profile_img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    font-size: 9px;
+  }
+}
