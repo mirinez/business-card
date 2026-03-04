@@ -370,6 +370,7 @@ body {
   .card_left {
     flex: 0.8; /* Less space */
     padding: 30px 20px;
+    display: none;
   }
 
   .card_title {
@@ -442,6 +443,7 @@ body {
   .card_left {
     flex: 0.7;
     padding: 25px 15px;
+    display: none;
   }
 
   .card_name {
