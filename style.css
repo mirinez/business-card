@@ -354,7 +354,7 @@ body {
     margin-top: 40px;
 }
 
-/* ================================================================
+css/* ================================================================
    13. MEDIA QUERIES - MOBILE FIRST
 */
 
@@ -368,30 +368,12 @@ body {
 
   /* Left Section */
   .card_left {
-    flex: 0.8; /* Less space */
-    padding: 30px 20px;
     display: none;
-  }
-
-  .card_title {
-    font-size: 14px;
-  }
-
-  .card_name {
-    font-size: 20px;
-  }
-
-  .card_role {
-    font-size: 11px;
-  }
-
-  .card_description {
-    font-size: 12px;
   }
 
   /* Right Section */
   .card_right {
-    flex: 0.6; /* Less space */
+    flex: 1;
     padding: 30px 15px;
   }
 
@@ -424,12 +406,6 @@ body {
     gap: 6px;
     flex-wrap: wrap;
   }
-
-  /* Tags */
-  .tag {
-    padding: 4px 10px;
-    font-size: 10px;
-  }
 }
 
 /* VERY SMALL DEVICES - max-width: 480px */
@@ -441,17 +417,11 @@ body {
   }
 
   .card_left {
-    flex: 0.7;
-    padding: 25px 15px;
     display: none;
   }
 
-  .card_name {
-    font-size: 18px;
-  }
-
   .card_right {
-    flex: 0.5;
+    flex: 1;
     padding: 25px 10px;
   }
 
