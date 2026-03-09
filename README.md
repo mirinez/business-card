@@ -32,10 +32,4 @@ Dieses Projekt ist eine statische Business Card (Visitenkarte), erstellt ausschl
 
 ---
 
-### Warum auf Englisch?
-
-Ich bin der Meinung, dass eine Business Card etwas ist, das ich in Zukunft verwenden könnte. Aufgrund der geringen Textmenge und der Einfachheit, diese zu ändern, habe ich mich dafür entschieden, sie auf Englisch zu erstellen. Das entspricht der Strategie meines LinkedIn-Profils, meines GitHub und meines Portfolios, die ebenfalls vollständig auf Englisch sind. Den Prozess habe ich allerdings auf Deutsch in meinen Notizen dokumentiert.
-
----
-
 *Full Stack Web Development Kurses – DBA Akademie, 2026.*
