@@ -1,9 +1,9 @@
 ## Visitenkarte – Hausaufgabe
 
-Autorin: Míriam Domínguez Martínez  
-Datum: 03.03.2026  
-Kurs: Full Stack Web Development – DBA Akademie  
-Thema: HTML & CSS – Visitenkarte
+**Autorin:** Míriam Domínguez Martínez  
+**Datum:** 03.03.2026  
+**Kurs:** Full Stack Web Development – DBA Akademie  
+**Thema:** HTML & CSS – Visitenkarte
 
 ---
 
