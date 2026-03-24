@@ -23,6 +23,10 @@ business-card/
 │       ├── github.svg
 │       ├── linkedin.svg
 │       └── portfolio.svg
+│   └──ico/
+│       ├── favicon.ico
+│       ├── favicon.png
+│       └── favicon_preview.png
 └── font/
     ├── Inter-Light.woff2
     ├── Inter-Regular.woff2
