@@ -7,7 +7,7 @@
 
 ### About
 
-Personal business card built with HTML - CSS. Designed to match the portfolio's aesthetic — minimal, clean, and developer-flavoured.
+Personal business card built with HTML / CSS. Designed to match the portfolio's aesthetic, minimal, clean, and developer-flavoured.
 
 ---
 
