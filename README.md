@@ -11,7 +11,7 @@ Personal business card built with HTML / CSS. Designed to match the portfolio's 
 
 ---
 
-### File Structure ☘️
+### File Structure
 
 ```
 business-card/
