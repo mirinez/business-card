@@ -362,20 +362,129 @@ body {
    8. RESPONSIVE
    =================
 */
+
+/* Tablet / large phone, give the card a bit more breathing room */
 @media (max-width: 540px) {
+  body {
+    padding: 20px 16px;
+    align-items: flex-start; /* card starts at top, no forced centering that causes scroll */
+  }
+
+  /* Header */
   .card-header {
-    padding: 22px 22px 20px;
-    flex-wrap: wrap;
+    padding: 20px 20px 18px;
     gap: 14px;
   }
-  .card-body {
-    padding: 20px 22px 24px;
+
+  .avatar-initials,
+  .avatar {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
   }
-  .card-footer {
-    padding: 14px 22px 18px;
-  }
+
   .card-name {
+    font-size: 15px;
+  }
+
+  .card-title {
+    font-size: 11.5px;
+  }
+
+  /* Body */
+  .card-body {
+    padding: 16px 20px 20px;
+  }
+
+  .card-desc {
+    font-size: 12.5px;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    line-height: 1.65;
+  }
+
+  .card-tags {
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .card-tag {
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+
+  .card-divider {
+    margin-bottom: 14px;
+  }
+
+  /* Links */
+  .card-links {
+    gap: 8px;
+  }
+
+  .card-link {
+    padding: 8px 12px;
+    gap: 10px;
+  }
+
+  .link-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    flex-shrink: 0;
+  }
+
+  .link-icon-img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .link-label {
+    font-size: 11.5px;
+  }
+
+  .link-value {
+    font-size: 11px;
+  }
+
+  .link-arrow {
+    font-size: 12px;
+  }
+
+  /* Footer */
+  .card-footer {
+    padding: 12px 20px 16px;
+  }
+
+  .signature {
     font-size: 16px;
+  }
+
+  .card-url {
+    font-size: 10.5px;
+  }
+}
+
+/* Very small phones (SE, Galaxy A series...) */
+@media (max-width: 360px) {
+  .card-header {
+    padding: 16px 16px 14px;
+  }
+
+  .card-body {
+    padding: 14px 16px 16px;
+  }
+
+  .card-footer {
+    padding: 10px 16px 14px;
+  }
+
+  .card-name {
+    font-size: 14px;
+  }
+
+  .card-desc {
+    font-size: 12px;
   }
 }
 /* END RESPONSIVE */
